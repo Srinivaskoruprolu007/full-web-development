@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Masterclass</title>
+    <style>
+      html,
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #f3f3f3;
+        line-height: 1.6;
+        padding: 20px;
+        margin: 0;
+      }
+      h1,
+      h2 {
+        color: #333;
+      }
+      .container {
+        background: #fff;
+        border: 1px solid black;
+        margin-bottom: 20px;
+        padding: 10px;
+      }
+
+      .grid-container {
+        display: grid;
+        gap: 10px;
+        background-color: #bcccdc;
+        padding: 10px;
+        margin-bottom: 10px;
+      }
+      .box {
+        background-color: #d39d55;
+        text-align: center;
+        padding: 10px;
+      }
+      .box:nth-child(even) {
+        background-color: #7e5cad;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Grid Masterclass</h1>
+    <div class="container">
+      <h2>1. Basic Grid (3X3)</h2>
+      <div
+        class="grid-container"
+        style="
+          grid-template-columns: repeat(3, 1fr);
+          grid-template-rows: repeat(3, 100px);
+        "
+      >
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+        <div class="box">9</div>
+      </div>
+    </div>
+    <div class="container">
+      <h2>2. Grid with different Columns</h2>
+      <div class="grid-container" style="grid-template-columns: 1fr 2fr 1fr">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+      </div>
+    </div>
+    <div class="container">
+      <h2>3. Grid with gaps</h2>
+      <div
+        class="grid-container"
+        style="grid-template-columns: repeat(3, 1fr); gap: 20px"
+      >
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+      </div>
+    </div>
+
+    <div class="container">
+      <h2>4. Grid Item Placement</h2>
+      <div
+        class="grid-container"
+        style="
+          grid-template-columns: repeat(3, 1fr);
+          grid-template-rows: repeat(3, 100px);
+        "
+      >
+        <div class="box" style="grid-column: 1/4">1</div>
+        <div class="box" style="grid-row: 2/4">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box" style="grid-column: 2/4">5</div>
+      </div>
+    </div>
+    <div class="container">
+      <h2>5. Grid Template Area</h2>
+      <div
+        class="grid-container"
+        style="
+          grid-template-areas: 'header header header' 'sidebar main main' 'footer footer footer';
+        "
+      >
+        <div class="box" style="grid-area: header">Header</div>
+        <div class="box" style="grid-area: sidebar">Sidebar</div>
+        <div class="box" style="grid-area: main">Main Content</div>
+        <div class="box" style="grid-area: footer">Footer</div>
+      </div>
+    </div>
+    <div class="container">
+      <h2>6. Auto fit MinMax</h2>
+      <div
+        class="grid-container"
+        style="grid-template-columns: repeat(auto-fit, minmax(100px, 1fr))"
+      >
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+      </div>
+    </div>
+    <div class="container">
+      <h2>7. Alignment and Justification</h2>
+      <div
+        class="grid-container"
+        style="
+          grid-template-columns: repeat(3, 1fr);
+          height: 300px;
+          align-items: center;
+        "
+      >
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+      </div>
+    </div>
+    <div class="container">
+      <h2>8. Nested Grids</h2>
+      <div class="grid-container" style="grid-template-columns: 1fr 1fr;">
+        <div class="box">1</div>
+        <div class="grid-container" style="grid-template-columns: repeat(2, 1fr);">
+          <div class="box" style="background-color: #0a5eb0">2.1</div>
+          <div class="box" style="background-color: #0a5eb0">2.2</div>
+          <div class="box" style="background-color: #0a5eb0">2.3</div>
+          <div class="box" style="background-color: #0a5eb0">2.4</div>
+          <div class="box" style="background-color: #0a5eb0">2.5</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
