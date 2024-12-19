@@ -24,4 +24,6 @@ Create a visually appealing and functional **signup page** with a form that allo
      - Center the form on the screen.  
      - Add padding, margins, and spacing for better readability.  
      - Style the input fields and submit button (hover effects, border, and focus states).  
-   - Use a modern design approach with complementary colors, fonts, and rounded borders.  
+   - Use a modern design approach with complementary colors, fonts, and rounded borders. 
+
+
