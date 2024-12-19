@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product card</title>
+    <style>
+      :root {
+        --primary-color: #d83344;
+        --text-color: #333333;
+        --background-color: #f5f5f7;
+        --card-background: #ffffff;
+      }
+      body {
+        font-family: "Inter", sans-serif;
+        background-color: var(--background-color);
+        color: var(--text-color);
+        line-height: 1.6;
+        padding: 20px;
+        margin: 0;
+      }
+      .container {
+        max-width: 400px;
+        margin: 2rem auto;
+      }
+      .product-card {
+        background-color: var(--card-background);
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .product-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+      }
+      .product-card-image {
+        height: 250px;
+        overflow: hidden;
+      }
+      .product-card-image img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+      }
+      .product-card-image:hover img {
+        transform: scale(1.05);
+      }
+      .product-card-info {
+        padding: 20px;
+      }
+      .product-title {
+        font-weight: 700;
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+        color: var(--text-color);
+      }
+      .product-description {
+        font-size: 0.9rem;
+        color: #666;
+        margin-bottom: 20px;
+      }
+      .product-price-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px;
+        padding: 5px;
+
+      }
+      .product-price {
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: var(--primary-color);
+      }
+      .add-to-cart-btn {
+        background-color: var(--primary-color);
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 50px;
+        font-size: 0.9rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      .add-to-cart-btn:hover{
+        background-color: #C71729;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="product-card">
+        <div class="product-card-image">
+          <img
+            src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
+            alt="Red Nike Shoes"
+          />
+        </div>
+        <div class="product-card-info">
+          <h2 class="product-title">Nike Air Max</h2>
+          <p class="product-description">
+            The ultimate experience you can get by Nike Air Max
+          </p>
+        </div>
+        <div class="product-price-info">
+          <span class="product-price">₹10,099.99</span>
+          <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
