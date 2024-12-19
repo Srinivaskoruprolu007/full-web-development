@@ -4,8 +4,6 @@
 #### **Objective:**  
 Create a visually appealing and functional **signup page** with a form that allows users to input their details. This task will focus on building the structure using HTML and styling it using CSS.
 
-
-
 #### **Requirements:**  
 
 1. **HTML Structure**  
@@ -70,3 +68,60 @@ Design and implement a visually appealing, responsive product card that showcase
 **Bonus:**  
 - Use CSS transitions for smooth animations on hover.  
 - Ensure the design is ready for integration into an e-commerce application.
+  
+### Task Description: Create a Webpage with a Carousel, Video Cards, and Footer
+
+**Objective:**  
+Design and develop a webpage that includes a responsive carousel, video cards with clickable YouTube thumbnails, and a footer displaying copyright information.
+
+---
+
+**Requirements:**
+
+1. **Carousel Section:**  
+   - Create a responsive carousel at the top of the page that takes up 25% of the viewport height.
+   - Style the carousel with a clean design and smooth transitions between slides.
+   - Include a minimum of 3 slides with placeholder content or images.
+
+2. **Video Cards Section:**  
+   - Below the carousel, add 3 card components side-by-side (in a row on larger screens and stacked on smaller screens).
+   - Each card should:
+     - Display a YouTube video thumbnail.
+     - Include a button labeled "Watch Video" that opens the corresponding video in a new tab.
+   - Style the cards for a modern look with consistent dimensions, shadows, and spacing.
+
+3. **Footer Section:**  
+   - At the bottom of the page, add a footer with:
+     - Copyright symbol (©).
+     - Your name.
+     - The current year (e.g., © 2024 Your Name).
+
+4. **Styling:**  
+   - Use CSS for layout and styling.
+   - Apply responsive design principles to ensure the webpage is mobile-friendly.
+   - Use CSS variables for colors and fonts to maintain design consistency.
+   - Ensure smooth transitions for interactive elements (e.g., buttons, carousel).
+
+5. **Accessibility:**  
+   - Provide `alt` text for images and thumbnails.
+   - Use clear, readable font sizes and proper color contrast.
+
+6. **Interactivity:**  
+   - Implement carousel slide transitions with CSS or JavaScript (optional for advanced behavior).
+   - Make the "Watch Video" buttons open YouTube links in a new tab.
+
+---
+
+**Deliverables:**  
+- A single HTML file with embedded CSS (or a separate CSS file) that implements the above features.  
+- Fully functional webpage with the following sections:
+  - Responsive carousel.
+  - Video cards with clickable YouTube thumbnails.
+  - Footer with copyright information.
+
+---
+
+**Bonus:**  
+- Add navigation controls (arrows or dots) for the carousel.  
+- Use Flexbox or CSS Grid for layout consistency.  
+- Include hover effects on the cards and buttons for better user experience.
