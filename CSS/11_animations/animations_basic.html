@@ -5,108 +5,128 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Basic Animations</title>
     <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-        body{
-            font-family: serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            min-height: 100vh;
-            background-color: #f0f0f0;
-            padding: 2rem;
-        }
+      body {
+        font-family: serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #f0f0f0;
+        padding: 2rem;
+      }
 
-        .container{
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 2rem;
-            max-width: 800px;
-            margin: 2rem;
-        }
-        .card{
-            background-color: white;
-            padding: 1.5rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .card:hover{
-            transform: translateY(-5px);
-            bottom: 0 5px 15px rgba(0, 0, 0, 0.2);
-        }
+      .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        max-width: 800px;
+        margin: 2rem;
+      }
+      .card {
+        background-color: white;
+        padding: 1.5rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .card:hover {
+        transform: translateY(-5px);
+        bottom: 0 5px 15px rgba(0, 0, 0, 0.2);
+      }
 
-        .spinning-circle{
-            width: 50px;
-            height: 50px;
-            background: linear-gradient(45deg, #ab0101, #4ecdc4);
-            border-radius: 50%;
-            animation: spin 2s linear infinite;
-            margin: 1rem auto;
-        }
+      .spinning-circle {
+        width: 50px;
+        height: 50px;
+        background: linear-gradient(45deg, #ab0101, #4ecdc4);
+        border-radius: 50%;
+        animation: spin 2s linear infinite;
+        margin: 1rem auto;
+      }
 
-        @keyframes spin {
-            from{transform: rotate(0deg);}
-            to{transform: rotate(360deg);}
+      @keyframes spin {
+        from {
+          transform: rotate(0deg);
         }
+        to {
+          transform: rotate(360deg);
+        }
+      }
 
-        .pulse-box{
-            width: 50px;
-            margin: 50px;
-            background-color: #ff6b6b;
-            margin: 1rem auto;
-            animation: pulse 2s ease infinite;
-        }
-        
-        @keyframes spin {
-            0% {transform: scale(1);}
-            50%{transform: scale(1.2);}
-            100%{transform: scale(1);}
-        }
+      .pulse-box {
+        width: 50px;
+        margin: 50px;
+        background-color: #ff6b6b;
+        margin: 1rem auto;
+        animation: pulse 2s ease infinite;
+      }
 
-        .slide-text{
-            overflow: hidden;
-            white-space: nowrap;
-            animation: slideIn 3s ease-in-out infinite;
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
         }
+        50% {
+          transform: scale(1.2);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
 
-        @keyframes slideIn {
-            from{transform: translateX(-100%);}
-            to{transform: translateX(100%);}
-        }
+      .slide-text {
+        overflow: hidden;
+        white-space: nowrap;
+        animation: slideIn 3s ease-in-out infinite;
+      }
 
-        .color-change{
-            padding: 1rem;
-            background: #4ecdc4;
-            transition: background-color 0.5s ease;
+      @keyframes slideIn {
+        from {
+          transform: translateX(-100%);
         }
+        to {
+          transform: translateX(100%);
+        }
+      }
 
-        .color-change:hover{
-            background-color: #ff6b6b;
-        }
+      .color-change {
+        padding: 1rem;
+        background: #4ecdc4;
+        transition: background-color 0.5s ease;
+      }
 
-        .shake-button{
-            padding: 0.5rem 1rem;
-            border: none;
-            background: #4ecdc4;
-            color: white;
-            border-radius: 4px;
-            cursor: pointer;
-            transition: transform 0.1 ease;
-        }
-        .shake-button:hover{
-            animation: shake 0.5s ease-in-out infinite;
-        }
-        @keyframes shake {
-            0%, 100%{transform: translateX(0);}
-            25%{transform: translateX(-5px);}
-            75%{transform: translateX(5px);}
-        }
+      .color-change:hover {
+        background-color: #ff6b6b;
+      }
 
+      .shake-button {
+        padding: 0.5rem 1rem;
+        border: none;
+        background: #4ecdc4;
+        color: white;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: transform 0.1 ease;
+      }
+      .shake-button:hover {
+        animation: shake 0.5s ease-in-out infinite;
+      }
+      @keyframes shake {
+        0%,
+        100% {
+          transform: translateX(0);
+        }
+        25% {
+          transform: translateX(-5px);
+        }
+        75% {
+          transform: translateX(5px);
+        }
+      }
     </style>
   </head>
   <body>
