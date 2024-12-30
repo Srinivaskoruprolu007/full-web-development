@@ -61,8 +61,10 @@ document.addEventListener("DOMContentLoaded", () => {
       let productId = parseInt(e.target.getAttribute("data-id"));
       const product = cart.find((product) => product.id === productId);
       cart.splice(cart.indexOf(product), 1);
-      let totalPrice = totalPriceCal();
-      totalPriceDiv.textContent = `$${totalPrice.toFixed(2)}`;
+      if (cart) {
+        let totalPrice = totalPriceCal();
+        totalPriceDiv.textContent = `$${totalPrice.toFixed(2)}`;
+      }
       renderCart();
     }
   });
