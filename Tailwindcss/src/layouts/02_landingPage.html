@@ -1,112 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../output.css">
-</head>
-<body class="bg-gray-100 text-gray-800">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stunning Websites</title>
+    <link rel="stylesheet" href="../output.css" />
+  </head>
+  <body class="bg-gray-100 text-gray-800">
+    <!-- Toggle Switch -->
+    <div class="absolute top-4 right-4">
+      <label class="relative inline-flex items-center cursor-pointer">
+        <input type="checkbox" class="sr-only peer" />
+        <div
+          class="w-11 h-6 bg-gray-200 peer-focus:ring-4 peer-focus:ring-green-300 rounded-full peer-checked:bg-green-500"
+        ></div>
+        <div
+          class="absolute top-0.5 left-[2px] w-5 h-5 bg-white rounded-full transition-transform peer-checked:translate-x-5"
+        ></div>
+      </label>
+    </div>
+
     <!-- Hero Section -->
     <header class="bg-gradient-to-r from-blue-500 to-indigo-600 text-white">
-      <div class="container mx-auto px-6 py-12 flex flex-col md:flex-row items-center justify-between">
+      <div
+        class="container mx-auto px-6 py-12 flex flex-col md:flex-row items-center justify-between"
+      >
         <div class="text-center md:text-left">
-          <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-4">Build Stunning Websites Effortlessly</h1>
-          <p class="text-lg md:text-xl mb-6">Experience the best tools for developers and designers to create amazing web projects.</p>
-          <a href="#features" class="bg-white text-blue-600 font-semibold px-6 py-3 rounded shadow-md hover:bg-blue-100">
+          <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-4">
+            Build Stunning Websites Effortlessly
+          </h1>
+          <p class="text-lg md:text-xl mb-6">
+            Experience the best tools for developers and designers to create
+            amazing web projects.
+          </p>
+          <a
+            href="#features"
+            class="bg-white text-blue-600 font-semibold px-6 py-3 rounded shadow-md hover:bg-blue-100"
+          >
             Get Started
           </a>
         </div>
         <div class="mt-8 md:mt-0">
-          <img src="./Assets/hero.jpg" alt="Hero image">
+          <img src="./Assets/hero.jpg" alt="Hero image" />
         </div>
       </div>
     </header>
+
     <!-- Features Section -->
     <section id="features" class="py-12 bg-white">
       <div class="container mx-auto px-6">
-        <h2 class="text-3xl font-bold text-center mb-8">
-          Why Choose Us?
-        </h2>
+        <h2 class="text-3xl font-bold text-center mb-8">Why Choose Us?</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <!-- feature 1 -->
-            <div class="bg-gray-100 p-6 rounded-lg shadow-md text-center">
-              <div class="text-blue-600 text-4xl mb-4">
-                ⚡
-              </div>
-              <h3 class="text-xl font-semibold mb-2">Fast Performance</h3>
-              <p class="text-gray-600">Optimized tools and frameworks to ensure top-notch speed for your projects.</p>
-            </div>
-            <div class="bg-gray-100 p-6 rounded-lg shadow-md text-center">
-              <div class="text-blue-600 text-4xl mb-4">
-                🎨
-              </div>
-              <h3 class="text-xl font-semibold mb-2">Beautiful Designs</h3>
-              <p class="text-gray-600">Crafted to deliver visually stunning and modern web interfaces.</p>
-            </div>
-            <div class="bg-gray-100 p-6 rounded-lg shadow-md text-center">
-              <div class="text-blue-600 text-4xl mb-4">
-                🔒
-              </div>
-              <h3 class="text-xl font-semibold mb-2">Secure & Reliable</h3>
-              <p class="text-gray-600">Implemented cutting-edge security measures to keep your data safe.</p>
-            </div>
+          <!-- Feature 1 -->
+          <div class="bg-gray-100 p-6 rounded-lg shadow-md text-center">
+            <div class="text-blue-600 text-4xl mb-4">⚡</div>
+            <h3 class="text-xl font-semibold mb-2">Fast Performance</h3>
+            <p class="text-gray-600">
+              Optimized tools and frameworks to ensure top-notch speed for your
+              projects.
+            </p>
+          </div>
+          <!-- Feature 2 -->
+          <div class="bg-gray-100 p-6 rounded-lg shadow-md text-center">
+            <div class="text-blue-600 text-4xl mb-4">🎨</div>
+            <h3 class="text-xl font-semibold mb-2">Beautiful Designs</h3>
+            <p class="text-gray-600">
+              Crafted to deliver visually stunning and modern web interfaces.
+            </p>
+          </div>
+          <!-- Feature 3 -->
+          <div class="bg-gray-100 p-6 rounded-lg shadow-md text-center">
+            <div class="text-blue-600 text-4xl mb-4">🔒</div>
+            <h3 class="text-xl font-semibold mb-2">Secure & Reliable</h3>
+            <p class="text-gray-600">
+              Implemented cutting-edge security measures to keep your data safe.
+            </p>
+          </div>
         </div>
       </div>
     </section>
+
     <!-- Testimonials Section -->
     <section class="py-12 bg-gray-50">
       <div class="container mx-auto px-6">
-        <h2 class="text-3xl font-bold text-center mb-8">What Our User Say</h2>
-      </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <!-- Testimonial 1 -->
-        <div class="bg-white p-6 rounded-lg shadow-md">
-          <p class="text-gray-600 italic mb-4">
-            "This platform has revolutionized the I work. Highly recommended!"
-          </p>
-          <div class="flex items-center space-x-4">
-            <img src="https://randomuser.me/api/portraits/med/men/75.jpg" alt="maxi" class="w-12 h-12 rounded-full">
+        <h2 class="text-3xl font-bold text-center mb-8">What Our Users Say</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Testimonial 1 -->
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <p class="text-gray-600 italic mb-4">
+              "This platform has revolutionized the way I work. Highly
+              recommended!"
+            </p>
+            <div class="flex items-center space-x-4">
+              <img
+                src="https://randomuser.me/api/portraits/med/men/75.jpg"
+                alt="Maxi"
+                class="w-12 h-12 rounded-full"
+              />
+              <div>
+                <h3 class="font-semibold">Maxi Hernifier</h3>
+                <p class="text-sm text-gray-500">Web Developer</p>
+              </div>
+            </div>
           </div>
-          <h3 class="font-semibold">Maxi Hernifier</h3>
-          <p class="text-sm text-gray-500">Web Developer</p>
-        </div>
-        <div class="bg-white p-6 rounded-lg shadow-md">
-          <p class="text-gray-600 italic mb-4">
-            "The designs are fantastic and the tools are intuitive. A must-try!"
-          </p>
-          <div class="flex items-center space-x-4">
-            <img src="https://randomuser.me/api/portraits/med/men/76.jpg" alt="baharath" class="w-12 h-12 rounded-full">
+          <!-- Testimonial 2 -->
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <p class="text-gray-600 italic mb-4">
+              "The designs are fantastic and the tools are intuitive. A
+              must-try!"
+            </p>
+            <div class="flex items-center space-x-4">
+              <img
+                src="https://randomuser.me/api/portraits/med/men/76.jpg"
+                alt="Bharath"
+                class="w-12 h-12 rounded-full"
+              />
+              <div>
+                <h3 class="font-semibold">Bharath</h3>
+                <p class="text-sm text-gray-500">Full Stack Developer</p>
+              </div>
+            </div>
           </div>
-          <h3 class="font-semibold">Bharath</h3>
-          <p class="text-sm text-gray-500">Full Stack Developer</p>
-        </div>
-        <div class="bg-white p-6 rounded-lg shadow-md">
-          <p class="text-gray-600 italic mb-4">
-            "Amazing features and blazing-fast performance!"
-          </p>
-          <div class="flex items-center space-x-4">
-            <img src="https://randomuser.me/api/portraits/med/women/55.jpg" alt="baharath" class="w-12 h-12 rounded-full">
+          <!-- Testimonial 3 -->
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <p class="text-gray-600 italic mb-4">
+              "Amazing features and blazing-fast performance!"
+            </p>
+            <div class="flex items-center space-x-4">
+              <img
+                src="https://randomuser.me/api/portraits/med/women/55.jpg"
+                alt="Jolley"
+                class="w-12 h-12 rounded-full"
+              />
+              <div>
+                <h3 class="font-semibold">Jolley</h3>
+                <p class="text-sm text-gray-500">Graphic Designer</p>
+              </div>
+            </div>
           </div>
-          <h3 class="font-semibold">Jolley</h3>
-          <p class="text-sm text-gray-500">Graphic Designer</p>
         </div>
       </div>
     </section>
-  
-    <!-- CTA -->
-    <section class="bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-12">
+
+    <!-- CTA Section -->
+    <section
+      class="bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-12"
+    >
       <div class="container mx-auto px-6 text-center">
         <h2 class="text-3xl font-bold mb-4">Ready to Get Started?</h2>
-        <p class="text-lg mb-6">Sign up now and join thousands of satisfied users.</p>
-        <a href="#" class="bg-white text-indigo-600 font-semibold px-6 py-3 rounded shadow-md hover:bg-indigo-100">
+        <p class="text-lg mb-6">
+          Sign up now and join thousands of satisfied users.
+        </p>
+        <a
+          href="#"
+          class="bg-white text-indigo-600 font-semibold px-6 py-3 rounded shadow-md hover:bg-indigo-100"
+        >
           Join Now
         </a>
       </div>
     </section>
+
+    <!-- Footer -->
     <footer class="bg-gray-800 text-white">
       <div class="container mx-auto px-6 py-4 text-center">
-        <p>&copy; 2024 Stunning Websites Inc. All rights are reerved.</p>
+        <p>&copy; 2024 Stunning Websites Inc. All rights reserved.</p>
       </div>
     </footer>
   </body>
