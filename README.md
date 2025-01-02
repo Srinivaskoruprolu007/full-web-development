@@ -7,13 +7,15 @@ Welcome to the **FullWebDev** repository! This is a comprehensive collection of 
 
 ## Table of Contents
 
-* [Introduction](https://chatgpt.com/c/6773ed83-d7d4-8009-9685-d9d2bebf7e1d#introduction)
-* [Features](https://chatgpt.com/c/6773ed83-d7d4-8009-9685-d9d2bebf7e1d#features)
-* [Technologies](https://chatgpt.com/c/6773ed83-d7d4-8009-9685-d9d2bebf7e1d#technologies)
-* [Folder Structure](https://chatgpt.com/c/6773ed83-d7d4-8009-9685-d9d2bebf7e1d#folder-structure)
-* [How to Use](https://chatgpt.com/c/6773ed83-d7d4-8009-9685-d9d2bebf7e1d#how-to-use)
-* [Contributing](https://chatgpt.com/c/6773ed83-d7d4-8009-9685-d9d2bebf7e1d#contributing)
-* [License](https://chatgpt.com/c/6773ed83-d7d4-8009-9685-d9d2bebf7e1d#license)
+- [FullWebDev Repository](#fullwebdev-repository)
+  - [Table of Contents](#table-of-contents)
+  - [Introduction](#introduction)
+  - [Features](#features)
+  - [Technologies](#technologies)
+  - [Folder Structure](#folder-structure)
+  - [How to Use](#how-to-use)
+  - [Contributing](#contributing)
+  - [License](#license)
 
 ---
 
@@ -85,4 +87,5 @@ Contributions are welcome! If you'd like to enhance this repository with additio
 
 ## License
 
-This repository is licensed under the [MIT License](https://chatgpt.com/c/LICENSE). Feel free to use, modify, and distribute the code as per the terms of the license.
+This repository is licensed under the [MIT License](https://opensource.org/licenses/MIT). Feel free to use, modify, and distribute the code as per the terms of the license.
+
