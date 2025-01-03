@@ -47,7 +47,7 @@ app.put("/teas/:id", (req, res) => {
 // delete a specific Tea
 app.delete("/teas/:id", (req, res) => {
   const id = req.params.id;
-  const tea = teaData.finc((tea) => tea.id === parseInt(id));
+  const tea = teaData.find((tea) => tea.id === parseInt(id));
   if (!tea) {
     res.status(404).send("Tea not found");
   }
