@@ -135,7 +135,7 @@ document.addEventListener("DOMContentLoaded", () => {
       li.classList.add(
         "bg-gray-700",
         "text-white",
-        "font-medium",
+        "font-medium",  
         "text-lg",
         "py-3",
         "px-4",
