@@ -3,10 +3,15 @@ module.exports = {
   content: ["./src/**/*.{html, js}"],
   darkMode: "selector",
   theme: {
-    colors: {
-      brand: "#3498db",
+    extend: {
+      fontFamily: {
+        logo: ["Playwrite AU SA", "sans-serif"],
+      },
+      colors: {
+        brand: "#3498db",
+        peach: "#F5ECD5",
+      },
     },
-    extend: {},
   },
   plugins: [],
 };
