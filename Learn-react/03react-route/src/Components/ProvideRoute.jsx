@@ -1,5 +1,5 @@
-const ProvideRoute = () => {
+const PrivateRoute = () => {
   return <div>ProvideRoute</div>;
 };
 
-export default ProvideRoute;
+export default PrivateRoute;
