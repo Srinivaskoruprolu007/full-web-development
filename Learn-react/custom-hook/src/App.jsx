@@ -20,11 +20,14 @@ function App() {
     setConvertedAmount(amount * data[to]);
   };
   return (
-    <div className="w-full h-screen flex flex-wrap justify-center items-center bg-cover bg-no-repeat bg-gray-500">
+    <div className="w-full h-screen flex flex-col flex-wrap justify-center items-center bg-cover bg-no-repeat bg-gray-800">
+      <h1 className="text-4xl border-none bg-amber-500 py-3 px-6 rounded-lg mb-4">
+        Currency Converter
+      </h1>
       <div className="w-full">
         <div
           className="w-full max-w-md mx-auto border border-gray-200 rounded-lg p-5 backdrop-blur-sm
-      bg-white/30"
+      bg-black/30"
         >
           <form
             onSubmit={(e) => {
@@ -35,7 +38,7 @@ function App() {
             <div className="w-full mb-1">
               <InputBox
                 label={from}
-                amount={amount}
+                amount={amount.toFixed(3)}
                 currencyOptions={options}
                 onCurrencyChange={(currency) => setFrom(currency)}
                 onAmountChange={(amount) => setAmount(amount)}
@@ -54,7 +57,7 @@ function App() {
             <div className="w-full mt-1">
               <InputBox
                 label={to}
-                amount={convertedAmount}
+                amount={convertedAmount.toFixed(3)}
                 currencyOptions={options}
                 onCurrencyChange={(currency) => setTo(currency)}
                 onAmountChange={(amount) => setConvertedAmount(amount)}
