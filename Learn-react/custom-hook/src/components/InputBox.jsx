@@ -33,7 +33,7 @@ const InputBox = ({
       <div className="w-1/2 fle flex-wrap justify-end text-right">
         <p className="mb-2 text-gray-400">Currency Type</p>
         <select
-          className="rounded-lg py-1 px-1 bg-gray-300 cursor-pointer outline-none"
+          className="rounded-lg py-1 px-1 bg-gray-300 cursor-pointer outline-none max-h-full"
           value={selectedCurrency}
           onChange={(e) => onCurrencyChange && onCurrencyChange(e.target.value)}
         >
