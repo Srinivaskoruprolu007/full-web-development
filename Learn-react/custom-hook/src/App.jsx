@@ -65,7 +65,7 @@ function App() {
             <div className="flex items-center justify-center">
               <button
                 className="w-full bg-green-600 m-2 rounded-lg px-2 py-1 text-white"
-                onSubmit={convert}
+                type="submit"
               >{`Convert ${from.toUpperCase()} To ${to.toUpperCase()}`}</button>
             </div>
           </form>
